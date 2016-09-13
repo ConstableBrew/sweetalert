@@ -222,6 +222,9 @@ sweetAlert.close = swal.close = function() {
   setTimeout(function() {
     var customClass = modal.getAttribute('data-custom-class');
     removeClass(modal, customClass);
+
+    var customBodyClass = modal.getAttribute('data-custom-body-class');
+    removeClass(document.body, customBodyClass);
   }, 300);
 
   // Make page scrollable again

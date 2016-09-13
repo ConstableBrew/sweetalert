@@ -53,6 +53,15 @@ var setParameters = function(params) {
   }
 
   /*
+   * Custom body class
+   */
+  if (params.customBodyClass) {
+    modal.setAttribute('data-custom-body-class', params.customBodyClass);
+  } else {
+    modal.setAttribute('data-custom-body-class', '');
+  }
+
+  /*
    * Icon
    */
   hide(modal.querySelectorAll('.sa-icon'));

@@ -75,6 +75,11 @@ var openModal = function(callback) {
 
   setTimeout(function () {
     addClass($modal, 'visible');
+
+    debugger;
+    let customBodyClass = $modal.getAttribute('data-custom-body-class');
+    addClass(document.body, customBodyClass);
+
   }, 500);
 
   var timer = $modal.getAttribute('data-timer');

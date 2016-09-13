@@ -14,6 +14,7 @@ var defaultParams = {
   imageSize: null,
   timer: null,
   customClass: '',
+  customBodyClass: '',
   html: false,
   animation: true,
   allowEscapeKey: true,
